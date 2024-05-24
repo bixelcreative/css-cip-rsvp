@@ -7,6 +7,12 @@
   /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
   /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 }
+
+.squadup-checkout-app .squadup-navigation-view-container .squadup-tickets-table .tickets.heading {
+    font-weight: bold;
+    font-size: small;
+}
+
 .squadup-checkout-app html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -7698,6 +7704,4 @@
 }
 /*# sourceMappingURL=bootstrap-namespace.min.css.map */
 
-.squadup-checkout-app .squadup-navigation-view-container .squadup-tickets-table .tickets.heading {
-    font-weight: bold;
-    font-size: small;
+
