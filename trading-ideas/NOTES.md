@@ -71,7 +71,16 @@ Other columns he named:
 6. Map winning rules to options entries + ATR-based sizing/trailing stops (existing Schwab work).
    Skip partial profits unless the data says otherwise.
 
+## MabeKit facts (via web search; site blocked from cloud)
+- **Price: $495/month**, 100% refund if not satisfied after first week. Includes Cruncher, Library (180+ columns),
+  Trade Client (automates via DAS / IBKR; **not Schwab**), Slack access to Dave.
+- Full column list + CSV spec are in app.davemabe.com/docs (likely behind login). Not publicly indexed.
+- Public posts worth reading on laptop: /how-to-build-your-column-library, /generating-exit-signals-from-the-mabekit-column-library,
+  /better-volatility-metric, /using-ai-agents-for-trading-strategies-part-2, /optimizing-your-strategy,
+  /strategy-creation-workflow-submitted-from-mabekit-user
+- Takeaway: build our own column library + "cruncher-lite" first (free); pay for the trial week only once we have
+  a solid backtest CSV to feed it.
+
 ## Open questions
-- Strategy Cruncher price / trial?
 - Historical intraday option prices source for realistic P/L?
 - Which base setup to start with?
