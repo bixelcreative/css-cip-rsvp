@@ -36,6 +36,16 @@ For: continuing the "Schwab API position sizing and trailing stops" work on lapt
    per bucket, out-of-sample split to avoid curve fitting). Then optionally try the real Strategy Cruncher trial.
 6. Fold the winning filters into the existing indicator plan + position sizing / trailing stops.
 
+## My setup
+- Style: **intraday day trading, mostly options contracts**
+- Platforms: Schwab thinkorswim (+ Schwab API), TradingView
+- Implication: compute ATR / RVOL / range columns on the **underlying** (1-min or 5-min bars),
+  RVOL must be time-of-day adjusted (cumulative volume vs. avg cumulative volume at same minute over N days).
+  Backtest signals on the underlying; P/L on options needs historical option prices (harder) or
+  use underlying R-multiples / delta approximation first.
+- thinkorswim: can build these as thinkScript studies/scan columns; TradingView: Pine Script indicators +
+  strategy tester "List of trades" export to CSV (good source for Cruncher-format CSV).
+
 ## Open questions
 - Does Strategy Cruncher have a free trial / cost?
-- Timeframe: intraday (needs minute bars for RVOL) or daily swing?
+- Source of historical intraday option prices for realistic backtest P/L?
